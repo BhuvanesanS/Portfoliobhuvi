@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Porifolio Website</title>
+    <link rel="stylesheet" href="./folio.css">
+    <script src="https://kit.fontawesome.com/3d3afef746.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <nav style="height: 100px; width: 100px;">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Porifolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class=" fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Full Stack Web Developer</h1><br>
+            <h1>Hi, I'm <span>Bhuvanesan</span><br>From Bangalore</h1>
+        </div>
+    </div>
+    <!-- ----------------about--------------- -->
+    <div id="about">
+        <div class="about-col-1">
+            <!-- <img src="./portifolio/images/WhatsApp Image 2023-04-21 at 12.51.42 PM.jpeg"> -->
+            <img src="./Black and Red Gradient Professional LinkedIn Banner (4).png" alt=""
+                style="height: 100%; width: 100%;">
+        </div>
+        <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>To pursue a challenging
+                career in a progressive environment
+                where learning innovation and
+                creativity are encouraged where my
+                skills and knowledge can be enhanced
+                to their maximum potential to
+                contribute overall success and grow.</p>
+
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Full Stack Web Developer</span><br>UI/UX</li>
+                    <li><span>Frontend Developer</span><br>Web Development</li>
+                    <li><span>Bank ENd Developer Developer</span><br>App Developement</li>
+                </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>2021-2022</span><br>Team Leader in Byjus</li>
+                    <li><span>2021-2022</span><br>Senior Business Development Associate in Byjus</li>
+                </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2022-Current</span><br>Full Stack Development Training From Jspiders Institute
+                    </li>
+                    <li><span>2017-2020</span><br>Bio Technology From Bharathidasan University</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------sevices----------------------------- -->
+    <div id="services">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Developer</h2>
+                <p>Write well designed, testable, efficient code by using best software development practices
+                    Create website layout/user interface by using standard HTML/CSS practices</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-sharp fa-solid fa-crop"></i>
+                <h2>Front End Developer</h2>
+                <p>Use markup languages like HTML to create user-friendly web pages.
+                    Maintain and improve website.
+                    Optimize applications for maximum speed.
+                    Design mobile-based features.
+                    Collaborate with back-end developers and web designers to improve usability.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>Back End Developer</h2>
+                <p>Communicate regularly with stakeholders, project managers, quality assurance teams, and other
+                    developers regarding progress on long-term technology roadmap
+                    Create and maintain workflows with teams to provide visibility and to ensure workload balance
+                    for consistent visual designs</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------portfolio----------------------------- -->
+    <div id="portfolio">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="./work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you to the talented people around the world.
+                        Download it from play Store
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./work-2.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>Spotify clone is a music streaming platform that helps you gain an advantage in the lucrative
+                        streaming industry. An app similar to Spotify helps you offer millions of songs of different
+                        genres to users.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./work-3.png">
+                <div class="layer">
+                    <h3>Personal Portfolio Website</h3>
+                    <p>A portfolio is a compilation of academic and professional materials that exemplifies your
+                        beliefs, skills, qualifications, education, training, and experiences. It provides insight into
+                        your personality and work ethic
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+    <!-- --------------contact----------------------- -->
+    <div id="contact">
+        <div class="row">
+            <div class="column-6" style="display:flex;">
+                <div class="contact-left">
+                    <h1 class="sub-title"> Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>bhuvii1012@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-square-phone"></i>9080777754</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/bhuvan_bhuvii_official/"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/bhuvanesan-s-b6a4b91a4/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.youtube.com/channel/UC4NellmG-F8XGXnLZatrLig"><i
+                                class="fa-brands fa-youtube"></i> </a>
+
+                        <a href="./BHUVANESAN RESUME 1 (1).pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                </div>
+                <div class="contact-right" style="display: flex;">
+                    <form  name="submit-to-google-sheet">
+                        <input type="text" name="name" rows="6" placeholder="your name" required>
+                        <input type="email" name="email" rows="6" placeholder="Your Email " required>
+                        <textarea name="maessage" rows="6" placeholder="Your Message"></textarea>
+                        <button type="sumbit" class="btn btn2">Sumbit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="copyright">
+        <p>Copyrights © Bhuvanesan S <i class="fa-solid fa-heart"></i> Follow Me</p>
+    </div>
+    <!-- <script src="./script.js"></script> -->
+
+    <div class="progress-wrap">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+</body>
+<script src="./script.js"></script>
+
+</html>
